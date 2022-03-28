@@ -1,19 +1,11 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.svelte';
-import Nav from '../components/Nav.svelte';
+// Layouts
+import MainLayout from '../layouts/MainLayout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<MainHead title="Not Found" />
-	</head>
-	<body>
-		<nav />
-		<div class="wrapper mt4 mb4">
-			<h1>Page Not Found</h1>
-			<p>Not found</p>
-		</div>
-		<footer />
-	</body>
-</html>
+<MainLayout name="John Cooley" title="John Cooley | Personal Site">
+	<div class="wrapper mt4 mb4">
+		<h1>Page Not Found</h1>
+		<p>Not found</p>
+	</div>
+</MainLayout>
