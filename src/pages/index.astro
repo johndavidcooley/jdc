@@ -1,9 +1,14 @@
 ---
 // Layouts
 import MainLayout from '../layouts/MainLayout.astro'
+
+import resumeImg from '../img/resume.jpg'
 ---
 
 <MainLayout name="John Cooley" title="John Cooley | Personal Site">
 	<h1>This is John Cooley's personal site.</h1>
-	<div>More stuff coming soon.</div>
+	<p>This is my resume. Click to download it.</p>
+	<a href="./John-Cooley-Resume.docx" rel="noopener noreferrer" target="_blank">
+		<img src={resumeImg} alt="John Cooley Resume" />
+	</a>
 </MainLayout>
