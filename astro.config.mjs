@@ -7,7 +7,14 @@
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
 // @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-	// Enable the Svelte renderer to support Svelte components.
-	renderers: ['@astrojs/renderer-svelte'],
+import { defineConfig } from 'astro/config';
+import svelte from '@astrojs/svelte';
+
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
+export default defineConfig({
+  integrations: [svelte(), tailwind({
+    config: { path: './tailwind.config.js' },
+  })]
 });

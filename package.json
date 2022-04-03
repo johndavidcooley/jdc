@@ -1,5 +1,5 @@
 {
-  "name": "@example/portfolio-svelte",
+  "name": "@johndavidcooley/personal-site",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,11 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.22.20",
-    "@astrojs/renderer-svelte": "^0.3.1"
+    "@astrojs/svelte": "^0.0.2",
+    "@astrojs/tailwind": "^0.1.0",
+    "astro": "^0.26.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }

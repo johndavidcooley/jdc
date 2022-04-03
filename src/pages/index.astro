@@ -1,14 +1,23 @@
 ---
 // Layouts
 import MainLayout from '../layouts/MainLayout.astro'
+import Test from '../components/Test.svelte'
 
 import resumeImg from '../img/resume.jpg'
 ---
 
 <MainLayout name="John Cooley" title="John Cooley | Personal Site">
-	<h1>This is John Cooley's personal site.</h1>
-	<p>This is my resume. Click to download it.</p>
-	<a href="./John-Cooley-Resume.docx" rel="noopener noreferrer" target="_blank">
+	<h1 class="text-special-100 h1">This is John Cooley's personal site.</h1>
+	<Test client:idle framework="Svelte" />
+	<p class="text-green-500">This is my resume. Click to download it.</p>
+	<a href="./John-Cooley-Resume.docx" rel="noopener noreferrer" target="_blank" class="inline-block">
 		<img src={resumeImg} alt="John Cooley Resume" />
 	</a>
 </MainLayout>
+
+
+<style lang="scss">
+.inline-block {
+	display: inline-block;
+}
+</style>
